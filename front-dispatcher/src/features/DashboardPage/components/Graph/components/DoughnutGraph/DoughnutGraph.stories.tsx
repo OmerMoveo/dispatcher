@@ -13,7 +13,7 @@ const Template: ComponentStory<typeof DoughnutGraph> = (args) => (
 );
 
 export const DoughnutGraphStory = Template.bind({});
-const data = [
+export const doughnutMockData = [
   { name: "Group A", value: 400 },
   { name: "Group B", value: 300 },
   { name: "Group C", value: 300 },
@@ -21,5 +21,5 @@ const data = [
 ];
 
 DoughnutGraphStory.args = {
-  data,
+  data: doughnutMockData,
 };

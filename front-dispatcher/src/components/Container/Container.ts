@@ -89,6 +89,7 @@ export const Container = styled.div`
   }
   &.graph {
     margin-top: 10%;
+    height: 100%;
   }
   &.relative {
     position: relative;

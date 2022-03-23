@@ -111,6 +111,8 @@ export const graphString = {
   cardLayoutClass: "graph",
   graphTypeArray: ["Sources", "Dates", "Tags"],
   Sum: "Sum",
+  SourcesDoughnutType: "Sources",
+  DatesLineType: "Dates",
 };
 export const headerStrings = {
   SignOut: "Sign Out",

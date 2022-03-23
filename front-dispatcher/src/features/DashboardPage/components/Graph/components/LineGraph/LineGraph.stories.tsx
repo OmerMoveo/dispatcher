@@ -11,7 +11,7 @@ export default {
 const Template: ComponentStory<typeof LineGraph> = (args) => (
   <LineGraph {...args} />
 );
-const data = [
+export const lineMockData = [
   {
     identifier: "April",
     value: 2400,
@@ -51,5 +51,5 @@ const mockData = mock.articles.map(({ publishedAt }, index) => {
 export const LineGraphStory = Template.bind({});
 
 LineGraphStory.args = {
-  data,
+  data: lineMockData,
 };

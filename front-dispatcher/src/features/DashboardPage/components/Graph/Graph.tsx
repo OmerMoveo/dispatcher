@@ -23,26 +23,17 @@ const Graph = ({ title, graphType }: graphProps) => {
     ) : graphType === graphString.DatesLineType ? (
       <LineGraph data={lineMockData} />
     ) : (
-      <>
+      <Container className={graphString.containerClass}>
         <NoGraphIcon />
         <CardText>{graphString.noDataToDisplay}</CardText>
-      </>
+      </Container>
     );
   };
   return (
     <CardLayout className={graphString.cardLayoutClass}>
       <CardTitle>{title}</CardTitle>
       <TitleDivider />
-      <Container className={graphString.containerClass}>
-        {!graphType ? (
-          <>
-            <NoGraphIcon />
-            <CardText>{graphString.noDataToDisplay}</CardText>
-          </>
-        ) : (
-          renderGraphsByType()
-        )}
-      </Container>
+      {renderGraphsByType()}
     </CardLayout>
   );
 };
